@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <section id="screen">
+        <div id="game">
+            
+            <div id="game_background"></div> 
+            <div id="game_foreground"></div> 
+            <div id="game_sprites">
+                <div id="container_bear">
+                    <div id="sprite_bear"></div>
+                </div>
+                <div id="container_poop">
+                    <div id="sprite_poop"></div>
+                </div>
+            </div>
+                
+            <div id="game_ui">
+                <div id="buttons_container">
+                    <div id="buttons"></div>
+                    <div id="inGame_homeButton"></div>
+                    <div id="inGame_replayButton"></div>
+                    <div id="inGame_soundButton"></div>
+                </div>
+                <div id="points_container">
+                    <div id="points"></div>
+                </div>
+                <div id="timer_container">
+                    <div id="timer_sprite"></div>
+                </div>
+                <div id="tp_lives"></div>
+            </div>
+          
+    
+
+         </div>
+        
+        <div id="title_screen">
+            <div id="load_button" class="pulse"></div>
+            <div id="instructions_button" class="pulse"></div>
+        </div>
+
+        <div id="instructions" class="hidden">
+            <div id="instructions_playbutton" class="pulse"></div>
+            <div id="instructions_homeButton" class="pulse"></div>
+            <div id="instructions_text">
+                <div id="text1"><h3>The toilet is hungry and wants to eat lots of poop and pee. But there are lots of other things falling in to the toilet that don't belong there!</h3><h3>Click on the follolwing objects to save them from the toilet and get a point.</h3></div>
+                <div id="text2"><h3>If any of the objects fall into the toilet you lose a point. Score 10 or more points when the time runs out to win. But look out! If you click a pee or a poop you will lose a life. You have 3 lives to start. Good luck! </h3></div>
+                </div>
+                
+
+        </div>
+
+        <div id="game_over" class="hidden">
+            <div id="you_lose_homeButton" class="pulse"></div>
+            <div id="you_lose_playAgain"  class="pulse"></div> 
+            <div id="you_lose_text"><h2>Now everything is covered in poop!</h2></div>
+        
+    </div>
+        <div id="game_won" class="hidden">
+            <div id="you_win_homeButton" class="pulse"></div>
+            <div id="you_win_playAgain" class="pulse"></div>
+            <div id="you_win_text"><h2>The toilet is happy and full of poop!</h2></div>
+        </div>
+    </section>
+
+    <script src="game.js"></script>
+</body>
+</html>

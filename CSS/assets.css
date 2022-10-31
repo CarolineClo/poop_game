@@ -1,0 +1,40 @@
+@import url("https://use.typekit.net/oli1qjh.css");
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: proxima-soft,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:1.6vw;
+    margin:0;
+
+}
+
+
+h1{
+    font-family: proxima-soft,sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3vw;
+    text-align: center;
+   
+
+
+}
+
+h2{
+    font-family: proxima-soft, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h3{
+    font-family: proxima-soft, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+.background{width:80%;} 

@@ -1,0 +1,570 @@
+@import url("https://use.typekit.net/oli1qjh.css");
+
+h2{
+    font-family: proxima-soft,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h3{font-family: proxima-soft,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    margin:1%;
+}
+
+#screen{
+    position: relative;
+    width: 80%;
+    aspect-ratio: 16/9;
+    border:4px solid black;
+}
+
+#game{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: blueviolet;
+    
+}
+
+#game_background{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image: url("./Graphics/game_background.svg");
+    background-size: cover;
+    
+}
+
+#title_screen{ 
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image: url(./Graphics/title_screen.svg);
+    background-size: cover;
+}
+
+#load_button{
+    background-image: url(./Graphics/startGame_button.svg);
+    position:absolute;
+    top:36%;
+    left:54%;
+    width:30%;
+    aspect-ratio: 1/0.94;
+    background-size: contain;  
+
+}
+
+#instructions_button{
+    background-image: url(./Graphics/instructions.svg);
+    position:absolute;
+    top:71%;
+    left:37.7%;
+    width:16%;
+    aspect-ratio: 1/0.94;
+    background-size: contain;  
+    background-repeat: no-repeat;
+
+
+}
+
+#game_sprites{ 
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+#container_bear{
+    position:absolute;
+    width:9%;
+    aspect-ratio: 1/1.18;
+
+}
+
+#sprite_bear{
+    width: 100%;
+    height:100%;
+    background-size: 100%;
+}
+
+#container_poop{
+    position:absolute;
+    width:10%;
+    aspect-ratio: 1/1;
+}
+
+#sprite_poop{
+    width: 100%;
+    height:100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#container_sock{
+    position:absolute;
+    width:8%;
+    aspect-ratio: 1/1.5;
+}
+
+#sprite_sock{
+    width: 100%;
+    height:100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#container_pee{
+    position:absolute;
+    width:8%;
+    aspect-ratio: 1/1.5;
+}
+
+#sprite_pee{
+    width: 100%;
+    height:100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+#instructions{ 
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image: url(./Graphics/instructions_screen.svg);
+    background-size: contain;
+}
+
+#instructions_text{ 
+    position: absolute;
+    width: 91%;
+    aspect-ratio: 16/9;
+    left: 4%;
+    top:  27%;
+
+}
+
+#text1{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/0.2;
+    left: 1%;
+    top:  1%;
+}
+
+#text2{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/0.2;
+    left: 1%;
+    top:  45%;
+
+}
+
+#instructions_playbutton{
+    background-image: url(./Graphics/startGame_button.svg);
+    position:absolute;
+    top:2%;
+    left:4%;
+    width:15%;
+    aspect-ratio: 1/0.92;
+    background-size: 100%;  
+    background-repeat: no-repeat;
+    
+
+}
+
+#instructions_homeButton{
+    background-image: url(./Graphics/homeButton.svg);
+    position:absolute;
+    top:2%;
+    left:80%;
+    width:15%;
+    aspect-ratio: 1/0.92;
+    background-size: 100%;  
+    background-repeat: no-repeat;
+
+}
+
+#buttons_container{
+    width: 7%;
+    aspect-ratio: 1/2.6;
+    position:absolute;
+    left:90%;
+    top: 65%;
+    
+}
+
+#buttons{
+    background-image: url(./Graphics/buttons.svg);
+    width:100%;
+    height:100%;
+    background-size: 100%;
+   
+}
+
+#inGame_homeButton{
+    background-image: url(./Graphics/home_button.svg);
+    position:absolute;
+    top:3%;
+    left:9%;
+    width:80%;
+    height:30%;
+    background-size: 100%;   
+ }
+
+
+ #inGame_replayButton{
+    background-image:url(./Graphics/replay_button.svg);
+    position:absolute;
+    top:35%;
+    left:9%;
+    width:80%;
+    height:30%;
+    background-size: 100%;
+ }
+
+ #inGame_soundButton{
+    background-image: url(./Graphics/sound_button.svg);
+    position:absolute;
+    top:67%;
+    left:9%;
+    width:80%;
+    height:30%;
+    background-size: 100%;
+
+ }
+
+ #points_container{
+    width: 7%;
+    aspect-ratio: 1/1;
+    position:absolute;
+    left:3%;
+    top: 70%;
+    
+}
+
+#points{
+    background-image: url(./Graphics/points.svg);
+    width:100%;
+    height:100%;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-size: x-large;
+    font-family: proxima-soft,sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+#timer_container{
+    background-image: url(./Graphics/time_up.svg);
+    width: 30%;
+    aspect-ratio: 1/0.2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:3%;
+    top: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#timer_sprite{
+    background-color:#ff7aab;
+    width: 92%;
+    height: 65%;
+    border-radius: 3px;
+
+    }
+
+#tp_lives{ 
+    width: 30%;
+    aspect-ratio: 2/0.56;
+    position:absolute;
+    left:3%;
+    top: 3%;
+    background-size: contain;
+    }
+
+
+
+#game_over{ 
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image: url(./Graphics/lose_screen.svg);
+    background-size: contain;
+}
+
+#you_lose_text{
+    position: absolute;
+    width: 43%;
+    aspect-ratio: 1/0.5;
+    left: 20%;
+    top:  30%;
+}
+
+#you_lose_playAgain{
+    background-image: url(./Graphics/play_again_button.svg);
+    position: absolute;
+    width: 16%;
+    aspect-ratio: 1/0.93;
+    left: 20%;
+    top: 68%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#you_lose_homeButton{
+    background-image: url(./Graphics/homeButton.svg);
+    position: absolute;
+    width: 16%;
+    aspect-ratio: 1/0.9;
+    left: 42%;
+    top: 68%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+#game_won{ 
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image: url(./Graphics/won_screen.svg);
+    background-size: contain;
+}
+
+#you_win_text{
+    position: absolute;
+    width: 43%;
+    aspect-ratio: 1/0.5;
+    left: 20%;
+    top:  35%;
+}
+
+#you_win_playAgain{
+    background-image: url(./Graphics/play_again_button.svg);
+    position: absolute;
+    width: 16%;
+    aspect-ratio: 1/0.93;
+    left: 20%;
+    top: 68%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#you_win_homeButton{
+    background-image: url(./Graphics/homeButton.svg);
+    position: absolute;
+    width: 16%;
+    aspect-ratio: 1/0.9;
+    left: 42%;
+    top: 68%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+.tp_0lives{
+    background-image: url(./Graphics/zero_lives.svg);
+}
+
+.tp_1lives{
+    background-image: url(./Graphics/1_lives.svg);
+}
+
+.tp_2lives{
+    background-image: url(./Graphics/2-lives.svg);
+}
+
+.tp_3lives{
+    background-image: url(./Graphics/3_lives.svg);
+}
+
+.happy_bear{
+    background-image: url(./Graphics/happy_teddy.svg);
+}
+
+.sad_bear{
+    background-image: url(./Graphics/sad_teddy.svg);
+}
+
+.happy_poop{
+    background-image: url(./Graphics/happy_poop.svg);
+
+}
+
+.sad_poop{
+    background-image: url(./Graphics/sad_poop.svg);
+}
+
+.happy_sock{
+    background-image: url(./Graphics/happy_sock.svg);
+}
+
+.sad_sock{
+    background-image: url(./Graphics/sad_sock.svg);
+}
+
+.happy_pee{
+    background-image: url(./Graphics/happy_pee.svg);
+}
+
+.sad_pee{
+    background-image: url(./Graphics/sad_pee.svg);
+}
+
+.falling{
+    animation: falling 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
+}
+
+.position0{
+    left: 15%;
+    top: -15%;
+}
+
+.position1{
+    left: 18%;
+    top: -15%;
+}
+
+.position2{
+    left: 20%;
+    top: -15%;
+}
+
+
+.position3{
+    left: 24%;
+    top: -15%;
+}
+
+.position4{
+    left: 30%;
+    top: -15%;
+}
+
+.position5{
+    left: 34%;
+    top: -15%;
+}
+
+.position6{
+    left: 40%;
+    top: -15%;
+}
+
+.position7{
+    left: 48%;
+    top: -15%;
+}
+
+
+.position8{
+    left: 52%;
+    top: -15%;
+}
+
+.position9{
+    left: 58%;
+    top: -15%;
+}
+
+.position10{
+    left: 62%;
+    top: -15%;
+}
+
+
+.position11{
+    left: 68%;
+    top: -15%;
+}
+.position12{
+    left: 72%;
+    top: -15%;
+}
+
+
+
+.hidden{
+    visibility:hidden;
+}
+
+.spin_disappear{
+    animation: spin_disappear 1s;
+}
+
+.stop{animation-play-state: paused;}
+
+.squish{
+    animation: squish 0.5s;
+    animation-iteration-count: 1;
+
+}
+
+.shrink{
+    animation-name: shrink;
+    animation-duration: 20s;
+    transition-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: left center;
+
+}
+
+.pulse{
+    animation: pulse 1s;
+    animation-iteration-count: infinite;
+}
+
+.pulse2{
+    animation: pulse 1.2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes falling { 
+    0% {transform:translateY(-10)}
+    100% {transform: translateY(378%)}   
+    }
+
+
+@keyframes spin_disappear{
+    to {transform: rotate(360deg) scale(1%)}
+
+}
+
+@keyframes squish{
+    to {transform: scale(110%)}
+}
+
+@keyframes shrink{
+   0%{transform:scaleX(100%)}
+   100%{transform:scaleX(0%)}
+
+}
+
+@keyframes pulse{
+    0%{transform:scale(100%)}
+    100%{transform:scale(110%)}
+}
